@@ -9,9 +9,11 @@ import {
   Image,
 } from 'react-native';
 
+import SearchBar from '../components/SearchBar/SearchBar';
 export const HomeScreen = ({navigation}) => {
   return (
     <SafeAreaView style={styles.container}>
+      <SearchBar />
       <View style={styles.viewContainer}>
         <Text style={styles.title}>TRENDING</Text>
         <ScrollView horizontal={true} style={styles.scrollView}>
