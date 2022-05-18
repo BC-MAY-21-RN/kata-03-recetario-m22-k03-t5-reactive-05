@@ -11,43 +11,16 @@ import {
 
 import SearchBar from '../components/SearchBar/SearchBar';
 import recipes from '../../db/data.json';
+import RecipeList from '../components/Recipe/RecipeList';
 export const HomeScreen = ({navigation}) => {
   return (
     <SafeAreaView style={styles.container}>
       <SearchBar />
       <View style={styles.viewContainer}>
         <Text style={styles.title}>TRENDING</Text>
-        <ScrollView horizontal={true} style={styles.scrollView}>
-          {recipes.map(recipe => (
-            <View style={styles.recipeCardStyle}>
-              <Image
-                source={{
-                  uri: recipe.img,
-                }}
-                style={{width: 150, height: 150}}
-              />
-              <Text style={styles.subtitle}>{recipe.title}</Text>
-            </View>
-          ))}
-        </ScrollView>
+        <RecipeList recipes={recipes} trending={true} />
         <Text style={styles.title}>RECENT</Text>
-        <ScrollView horizontal={true} style={styles.scrollView}>
-          {recipes.map(recipe => (
-            <View style={styles.recipeCardStyle}>
-              <Image
-                source={{
-                  uri: recipe.img,
-                }}
-                style={{width: 200, height: 200}}
-              />
-              <Text style={styles.subtitle}>{recipe.title}</Text>
-              <Button
-                title="Go to Recipe screen"
-                onPress={() => navigation.navigate('Recipe')}
-              />
-            </View>
-          ))}
-        </ScrollView>
+        <RecipeList recipes={recipes} trending={false} />
       </View>
     </SafeAreaView>
   );
@@ -79,10 +52,19 @@ const styles = StyleSheet.create({
   },
   recipeCardStyle: {
     marginRight: 10,
-    marginBottom: 10,
   },
   container: {
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  recipeImageRecent: {
+    width: 200,
+    height: 200,
+    borderRadius: 15,
+  },
+  recipeImageTrending: {
+    width: 150,
+    height: 150,
+    borderRadius: 15,
   },
 });
