@@ -10,6 +10,7 @@ import {
 } from 'react-native';
 
 import SearchBar from '../components/SearchBar/SearchBar';
+import recipes from '../../db/data.json';
 export const HomeScreen = ({navigation}) => {
   return (
     <SafeAreaView style={styles.container}>
@@ -17,23 +18,35 @@ export const HomeScreen = ({navigation}) => {
       <View style={styles.viewContainer}>
         <Text style={styles.title}>TRENDING</Text>
         <ScrollView horizontal={true} style={styles.scrollView}>
-          <Image
-            source={{
-              uri: 'https://reactnative.dev/docs/assets/p_cat2.png',
-            }}
-            style={{width: 200, height: 200}}
-          />
-          <Button
-            title="Go to Recipe screen"
-            onPress={() => navigation.navigate('Recipe')}
-          />
+          {recipes.map(recipe => (
+            <View style={styles.recipeCardStyle}>
+              <Image
+                source={{
+                  uri: recipe.img,
+                }}
+                style={{width: 150, height: 150}}
+              />
+              <Text style={styles.subtitle}>{recipe.title}</Text>
+            </View>
+          ))}
         </ScrollView>
         <Text style={styles.title}>RECENT</Text>
         <ScrollView horizontal={true} style={styles.scrollView}>
-          <Button
-            title="Go to Recipe screen"
-            onPress={() => navigation.navigate('Recipe')}
-          />
+          {recipes.map(recipe => (
+            <View style={styles.recipeCardStyle}>
+              <Image
+                source={{
+                  uri: recipe.img,
+                }}
+                style={{width: 200, height: 200}}
+              />
+              <Text style={styles.subtitle}>{recipe.title}</Text>
+              <Button
+                title="Go to Recipe screen"
+                onPress={() => navigation.navigate('Recipe')}
+              />
+            </View>
+          ))}
         </ScrollView>
       </View>
     </SafeAreaView>
@@ -44,6 +57,7 @@ const styles = StyleSheet.create({
   viewContainer: {
     width: '100%',
     height: '100%',
+    paddingBottom: 100,
     backgroundColor: '#2d3436',
   },
   title: {
@@ -53,15 +67,21 @@ const styles = StyleSheet.create({
     marginTop: 20,
     marginBottom: 15,
   },
+  subtitle: {
+    color: 'white',
+    marginTop: 10,
+  },
   scrollView: {
     width: '90%',
-    padding: 30,
+    padding: 10,
     marginRight: '5%',
     marginLeft: '5%',
-    backgroundColor: '#222f3e',
+  },
+  recipeCardStyle: {
+    marginRight: 10,
+    marginBottom: 10,
   },
   container: {
-    flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
   },
