@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "title": "Lemon Pie",
+    "img": "https://t2.rg.ltmcdn.com/es/posts/2/7/7/lemon_pie_saludable_75772_600.jpg",
+    "ingredients": [
+      {
+        "name": "egg white",
+        "amount": "1"
+      },
+      {
+        "name": "wholemeal flour",
+        "amount": "70 grams"
+      },
+      {
+        "name": "oatmeal",
+        "amount": "30 grams"
+      },
+      {
+        "name": "sugar",
+        "amount": "1 tablespoon"
+      },
+      {
+        "name": "yolk",
+        "amount": "1"
+      },
+      {
+        "name": "skim milk or unsweetened vegetable milk",
+        "amount": "200 milliliters"
+      },
+      {
+        "name": "lemon juice and zest",
+        "amount": "1/2 juice"
+      }
+    ],
+    "like": 0,
+    "servings": "6"
+  },
+  {
+    "id": 2,
+    "title": "spaghetti",
+    "img": "https://sibeti.com/wp-content/uploads/2021/09/espagueti-verde-con-chile-poblano-e1631910735274.jpg",
+    "ingredients": [
+      {
+        "name": "Cups of tomato puree 1/2",
+        "amount": "1"
+      },
+      {
+        "name": "Cup of water",
+        "amount": "500 grams"
+      },
+      {
+        "name": "Tomato Cubes with Chicken",
+        "amount": "1"
+      },
+      {
+        "name": "Can of Media Crema",
+        "amount": "1"
+      },
+      {
+        "name": "spaghetti pack",
+        "amount": "200 grams"
+      },
+      {
+        "name": "Fresh parsley",
+        "amount": "2"
+      }
+    ],
+    "like": 0,
+    "servings": "6"
+  },
+  {
+    "id": 3,
+    "title": "Teriyaki chicken",
+    "img": "https://www.cookingclassy.com/wp-content/uploads/2018/04/teriyaki-chicken-15.jpg",
+    "ingredients": [
+      {
+        "name": "boneless chicken thighs",
+        "amount": "6"
+      },
+      {
+        "name": "garlic cloves",
+        "amount": "2"
+      },
+      {
+        "name": "runny honey",
+        "amount": "50 grams"
+      },
+      {
+        "name": "rice wine vinegar",
+        "amount": "1 tablespoon"
+      },
+      {
+        "name": "sesame seeds",
+        "amount": "1 tablespoon"
+      },
+      {
+        "name": "sping onions",
+        "amount": "4"
+      },
+      {
+        "name": "toasted sesame oil",
+        "amount": "2 tablespoon"
+      }
+    ],
+    "like": 0,
+    "servings": "6"
+  },
+]  
+
