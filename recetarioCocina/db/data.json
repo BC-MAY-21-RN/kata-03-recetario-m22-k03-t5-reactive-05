@@ -5,30 +5,37 @@
     "img": "https://t2.rg.ltmcdn.com/es/posts/2/7/7/lemon_pie_saludable_75772_600.jpg",
     "ingredients": [
       {
+        "id": 1,
         "name": "egg white",
         "amount": "1"
       },
       {
+        "id": 2,
         "name": "wholemeal flour",
         "amount": "70 grams"
       },
       {
+        "id": 3,
         "name": "oatmeal",
         "amount": "30 grams"
       },
       {
+        "id": 4,
         "name": "sugar",
         "amount": "1 tablespoon"
       },
       {
+        "id": 5,
         "name": "yolk",
         "amount": "1"
       },
       {
+        "id": 6,
         "name": "skim milk or unsweetened vegetable milk",
         "amount": "200 milliliters"
       },
       {
+        "id": 7,
         "name": "lemon juice and zest",
         "amount": "1/2 juice"
       }
@@ -42,26 +49,32 @@
     "img": "https://sibeti.com/wp-content/uploads/2021/09/espagueti-verde-con-chile-poblano-e1631910735274.jpg",
     "ingredients": [
       {
+        "id":1,
         "name": "Cups of tomato puree 1/2",
         "amount": "1"
       },
       {
+        "id":2,
         "name": "Cup of water",
         "amount": "500 grams"
       },
       {
+        "id":3,
         "name": "Tomato Cubes with Chicken",
         "amount": "1"
       },
       {
+        "id":4,
         "name": "Can of Media Crema",
         "amount": "1"
       },
       {
+        "id":5,
         "name": "spaghetti pack",
         "amount": "200 grams"
       },
       {
+        "id":6,
         "name": "Fresh parsley",
         "amount": "2"
       }
@@ -75,30 +88,37 @@
     "img": "https://www.cookingclassy.com/wp-content/uploads/2018/04/teriyaki-chicken-15.jpg",
     "ingredients": [
       {
+        "id":1,
         "name": "boneless chicken thighs",
         "amount": "6"
       },
       {
+        "id":2,
         "name": "garlic cloves",
         "amount": "2"
       },
       {
+        "id":3,
         "name": "runny honey",
         "amount": "50 grams"
       },
       {
+        "id":4,
         "name": "rice wine vinegar",
         "amount": "1 tablespoon"
       },
       {
+        "id":5,
         "name": "sesame seeds",
         "amount": "1 tablespoon"
       },
       {
+        "id":6,
         "name": "sping onions",
         "amount": "4"
       },
       {
+        "id":7,
         "name": "toasted sesame oil",
         "amount": "2 tablespoon"
       }
