@@ -1,6 +1,6 @@
 import React from 'react';
 import {View, Image, StyleSheet, Text, TouchableOpacity} from 'react-native';
-export const RecipeItem = ({recipe}) => {
+export const RecipeItem = ({recipe, trending}) => {
   return (
     <TouchableOpacity style={styles.recipeCardStyle} key={recipe.id}>
       <View>
@@ -8,7 +8,10 @@ export const RecipeItem = ({recipe}) => {
           source={{
             uri: recipe.img,
           }}
-          style={styles.recipeImageTrending}
+          style={[
+            styles.recipeImageTrending,
+            trending ? null : styles.imageSizeRecent,
+          ]}
         />
         <Text style={styles.subtitle}>{recipe.title}</Text>
       </View>
@@ -35,5 +38,9 @@ const styles = StyleSheet.create({
     width: 150,
     height: 150,
     borderRadius: 15,
+  },
+  imageSizeRecent: {
+    width: 200,
+    height: 200,
   },
 });

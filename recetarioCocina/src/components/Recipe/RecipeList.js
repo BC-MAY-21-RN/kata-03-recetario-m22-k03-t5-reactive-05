@@ -1,18 +1,13 @@
 import React from 'react';
 import {ScrollView, StyleSheet} from 'react-native';
 import {RecipeItem} from './RecipeItem';
-import {RecipeTrendingItem} from './RecipeTrendingItem';
 
 const RecipeList = ({recipes, trending}) => {
   return (
     <ScrollView horizontal style={styles.scrollView}>
-      {recipes.map(recipe =>
-        trending ? (
-          <RecipeItem recipe={recipe} key={recipe.id} />
-        ) : (
-          <RecipeTrendingItem recipe={recipe} key={recipe.id} />
-        ),
-      )}
+      {recipes.map(recipe => (
+        <RecipeItem recipe={recipe} key={recipe.id} trending={trending} />
+      ))}
     </ScrollView>
   );
 };
