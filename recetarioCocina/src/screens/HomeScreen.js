@@ -1,13 +1,5 @@
 import React from 'react';
-import {
-  Text,
-  Button,
-  View,
-  StyleSheet,
-  ScrollView,
-  SafeAreaView,
-  Image,
-} from 'react-native';
+import {Text, View, StyleSheet, SafeAreaView} from 'react-native';
 
 import SearchBar from '../components/SearchBar/SearchBar';
 import recipes from '../../db/data.json';
@@ -18,9 +10,18 @@ export const HomeScreen = ({navigation}) => {
       <SearchBar />
       <View style={styles.viewContainer}>
         <Text style={styles.title}>TRENDING</Text>
-        <RecipeList recipes={recipes} trending={true} />
+        <RecipeList
+          recipes={recipes}
+          trending
+          navigation={navigation}
+          category="Trending"
+        />
         <Text style={styles.title}>RECENT</Text>
-        <RecipeList recipes={recipes} trending={false} />
+        <RecipeList
+          recipes={recipes}
+          navigation={navigation}
+          category="Recent"
+        />
       </View>
     </SafeAreaView>
   );
