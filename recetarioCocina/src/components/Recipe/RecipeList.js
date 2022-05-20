@@ -1,14 +1,23 @@
 import React from 'react';
-import {ScrollView, StyleSheet} from 'react-native';
+import {StyleSheet, FlatList} from 'react-native';
 import {RecipeItem} from './RecipeItem';
 
-const RecipeList = ({recipes, trending}) => {
+const RecipeList = ({recipes, trending, navigation, category}) => {
   return (
-    <ScrollView horizontal style={styles.scrollView}>
-      {recipes.map(recipe => (
-        <RecipeItem recipe={recipe} key={recipe.id} trending={trending} />
-      ))}
-    </ScrollView>
+    <FlatList
+      style={styles.scrollView}
+      horizontal
+      data={recipes}
+      renderItem={({item}) => (
+        <RecipeItem
+          recipe={item}
+          key={item.id}
+          trending={trending}
+          navigation={navigation}
+          category={category}
+        />
+      )}
+    />
   );
 };
 
