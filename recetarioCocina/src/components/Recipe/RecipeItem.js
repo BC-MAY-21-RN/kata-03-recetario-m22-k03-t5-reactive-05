@@ -1,8 +1,18 @@
 import React from 'react';
 import {View, Image, StyleSheet, Text, TouchableOpacity} from 'react-native';
-export const RecipeItem = ({recipe, trending}) => {
+
+export const RecipeItem = ({recipe, navigation, trending, category}) => {
   return (
-    <TouchableOpacity style={styles.recipeCardStyle} key={recipe.id}>
+    <TouchableOpacity
+      style={styles.recipeCardStyle}
+      key={recipe.id}
+      onPress={() => {
+        navigation.navigate('Recipe', {
+          id: recipe.id,
+          title: category,
+          recipe: recipe,
+        });
+      }}>
       <View>
         <Image
           source={{
