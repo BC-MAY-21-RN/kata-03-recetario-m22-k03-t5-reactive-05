@@ -1,14 +1,30 @@
-/**
- * @format
- */
-
 import 'react-native';
+import {RecipeItem} from '../src/components/Recipe/RecipeItem';
 import React from 'react';
-import App from '../App';
-
-// Note: test renderer must be required after react-native.
+import {Image} from 'react-native';
 import renderer from 'react-test-renderer';
 
-it('renders correctly', () => {
-  renderer.create(<App />);
+test('Demostrate the array is not empty', () => {
+  expect(RecipeItem).not.toBeNull();
 });
+
+it('Image', () => {
+  const RecipeItem = renderer.create(<Image />).toJSON();
+  expect(RecipeItem).toMatchSnapshot();
+});
+
+/*
+test('the flavor list contains lime', () => {
+  expect(['lime', 'mangle']).toContain('lime');
+});
+
+it('with component', () => {
+  const props = {
+      component: () => {},
+    },
+    ModalWrapperComponent = RecipeItem(<TouchableOpacity {...props} />);
+  expect(ModalWrapperComponent).toMatchSnapshot();
+});
+test('the flavor list contains lime', () => {
+  expect("lime juice").toContain('lime');
+}); */
