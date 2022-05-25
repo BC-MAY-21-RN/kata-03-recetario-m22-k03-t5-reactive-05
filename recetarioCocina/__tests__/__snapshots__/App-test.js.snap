@@ -1,3 +1,396 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Image 1`] = `<Image />`;
+exports[`Recipe RecipeItem component render 1`] = `
+<View
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "marginRight": 10,
+      "opacity": 1,
+    }
+  }
+>
+  <View>
+    <Image
+      source={
+        Object {
+          "uri": "https://t2.rg.ltmcdn.com/es/posts/2/7/7/lemon_pie_saludable_75772_600.jpg",
+        }
+      }
+      style={
+        Array [
+          Object {
+            "borderRadius": 15,
+            "height": 150,
+            "width": 150,
+          },
+          null,
+        ]
+      }
+    />
+    <Text
+      style={
+        Object {
+          "color": "white",
+          "marginTop": 10,
+        }
+      }
+    >
+      Lemon Pie
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Recipe RecipeList Component Render 1`] = `
+<RCTScrollView
+  data={
+    Array [
+      Object {
+        "id": 1,
+        "img": "https://t2.rg.ltmcdn.com/es/posts/2/7/7/lemon_pie_saludable_75772_600.jpg",
+        "ingredients": Array [
+          Object {
+            "amount": "1",
+            "id": 1,
+            "name": "egg white",
+          },
+          Object {
+            "amount": "70 grams",
+            "id": 2,
+            "name": "wholemeal flour",
+          },
+          Object {
+            "amount": "30 grams",
+            "id": 3,
+            "name": "oatmeal",
+          },
+          Object {
+            "amount": "1 tablespoon",
+            "id": 4,
+            "name": "sugar",
+          },
+          Object {
+            "amount": "1",
+            "id": 5,
+            "name": "yolk",
+          },
+          Object {
+            "amount": "200 milliliters",
+            "id": 6,
+            "name": "skim milk or unsweetened vegetable milk",
+          },
+          Object {
+            "amount": "1/2 juice",
+            "id": 7,
+            "name": "lemon juice and zest",
+          },
+        ],
+        "like": 0,
+        "servings": "6",
+        "title": "Lemon Pie",
+      },
+      Object {
+        "id": 2,
+        "img": "https://sibeti.com/wp-content/uploads/2021/09/espagueti-verde-con-chile-poblano-e1631910735274.jpg",
+        "ingredients": Array [
+          Object {
+            "amount": "1",
+            "id": 1,
+            "name": "Cups of tomato puree 1/2",
+          },
+          Object {
+            "amount": "500 grams",
+            "id": 2,
+            "name": "Cup of water",
+          },
+          Object {
+            "amount": "1",
+            "id": 3,
+            "name": "Tomato Cubes with Chicken",
+          },
+          Object {
+            "amount": "1",
+            "id": 4,
+            "name": "Can of Media Crema",
+          },
+          Object {
+            "amount": "200 grams",
+            "id": 5,
+            "name": "spaghetti pack",
+          },
+          Object {
+            "amount": "2",
+            "id": 6,
+            "name": "Fresh parsley",
+          },
+        ],
+        "like": 0,
+        "servings": "6",
+        "title": "spaghetti",
+      },
+      Object {
+        "id": 3,
+        "img": "https://www.cookingclassy.com/wp-content/uploads/2018/04/teriyaki-chicken-15.jpg",
+        "ingredients": Array [
+          Object {
+            "amount": "6",
+            "id": 1,
+            "name": "boneless chicken thighs",
+          },
+          Object {
+            "amount": "2",
+            "id": 2,
+            "name": "garlic cloves",
+          },
+          Object {
+            "amount": "50 grams",
+            "id": 3,
+            "name": "runny honey",
+          },
+          Object {
+            "amount": "1 tablespoon",
+            "id": 4,
+            "name": "rice wine vinegar",
+          },
+          Object {
+            "amount": "1 tablespoon",
+            "id": 5,
+            "name": "sesame seeds",
+          },
+          Object {
+            "amount": "4",
+            "id": 6,
+            "name": "sping onions",
+          },
+          Object {
+            "amount": "2 tablespoon",
+            "id": 7,
+            "name": "toasted sesame oil",
+          },
+        ],
+        "like": 0,
+        "servings": "6",
+        "title": "Teriyaki chicken",
+      },
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  horizontal={true}
+  keyExtractor={[Function]}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={false}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={Array []}
+  style={
+    Object {
+      "flexGrow": 0,
+      "marginLeft": "5%",
+      "marginRight": "5%",
+      "padding": 10,
+      "width": "90%",
+    }
+  }
+  viewabilityConfigCallbackPairs={Array []}
+>
+  <View>
+    <View
+      onLayout={[Function]}
+      style={
+        Array [
+          Object {
+            "flexDirection": "row",
+          },
+          null,
+        ]
+      }
+    >
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "marginRight": 10,
+            "opacity": 1,
+          }
+        }
+      >
+        <View>
+          <Image
+            source={
+              Object {
+                "uri": "https://t2.rg.ltmcdn.com/es/posts/2/7/7/lemon_pie_saludable_75772_600.jpg",
+              }
+            }
+            style={
+              Array [
+                Object {
+                  "borderRadius": 15,
+                  "height": 150,
+                  "width": 150,
+                },
+                null,
+              ]
+            }
+          />
+          <Text
+            style={
+              Object {
+                "color": "white",
+                "marginTop": 10,
+              }
+            }
+          >
+            Lemon Pie
+          </Text>
+        </View>
+      </View>
+    </View>
+    <View
+      onLayout={[Function]}
+      style={
+        Array [
+          Object {
+            "flexDirection": "row",
+          },
+          null,
+        ]
+      }
+    >
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "marginRight": 10,
+            "opacity": 1,
+          }
+        }
+      >
+        <View>
+          <Image
+            source={
+              Object {
+                "uri": "https://sibeti.com/wp-content/uploads/2021/09/espagueti-verde-con-chile-poblano-e1631910735274.jpg",
+              }
+            }
+            style={
+              Array [
+                Object {
+                  "borderRadius": 15,
+                  "height": 150,
+                  "width": 150,
+                },
+                null,
+              ]
+            }
+          />
+          <Text
+            style={
+              Object {
+                "color": "white",
+                "marginTop": 10,
+              }
+            }
+          >
+            spaghetti
+          </Text>
+        </View>
+      </View>
+    </View>
+    <View
+      onLayout={[Function]}
+      style={
+        Array [
+          Object {
+            "flexDirection": "row",
+          },
+          null,
+        ]
+      }
+    >
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "marginRight": 10,
+            "opacity": 1,
+          }
+        }
+      >
+        <View>
+          <Image
+            source={
+              Object {
+                "uri": "https://www.cookingclassy.com/wp-content/uploads/2018/04/teriyaki-chicken-15.jpg",
+              }
+            }
+            style={
+              Array [
+                Object {
+                  "borderRadius": 15,
+                  "height": 150,
+                  "width": 150,
+                },
+                null,
+              ]
+            }
+          />
+          <Text
+            style={
+              Object {
+                "color": "white",
+                "marginTop": 10,
+              }
+            }
+          >
+            Teriyaki chicken
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;

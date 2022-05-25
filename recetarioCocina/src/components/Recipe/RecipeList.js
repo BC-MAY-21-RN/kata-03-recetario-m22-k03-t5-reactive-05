@@ -2,7 +2,7 @@ import React from 'react';
 import {StyleSheet, FlatList} from 'react-native';
 import {RecipeItem} from './RecipeItem';
 
-const RecipeList = ({recipes, trending, navigation, category}) => {
+export const RecipeList = ({recipes, trending, navigation, category}) => {
   return (
     <FlatList
       style={styles.scrollView}
@@ -29,5 +29,6 @@ const styles = StyleSheet.create({
     padding: 10,
     marginRight: '5%',
     marginLeft: '5%',
+    flexGrow: 0,
   },
 });

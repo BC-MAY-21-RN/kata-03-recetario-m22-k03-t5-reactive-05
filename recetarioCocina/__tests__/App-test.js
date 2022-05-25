@@ -1,30 +1,24 @@
 import 'react-native';
 import {RecipeItem} from '../src/components/Recipe/RecipeItem';
+import {RecipeList} from '../src/components/Recipe/RecipeList';
 import React from 'react';
-import {Image} from 'react-native';
 import renderer from 'react-test-renderer';
+import recipes from '../db/data.json';
 
 test('Demostrate the array is not empty', () => {
   expect(RecipeItem).not.toBeNull();
 });
-
-it('Image', () => {
-  const RecipeItem = renderer.create(<Image />).toJSON();
-  expect(RecipeItem).toMatchSnapshot();
+describe('Recipe', () => {
+  it('RecipeItem component render', () => {
+    const RenderedItem = renderer
+      .create(<RecipeItem recipe={recipes[0]} category="Trending" trending />)
+      .toJSON();
+    expect(RenderedItem).toMatchSnapshot();
+  });
+  it('RecipeList Component Render', () => {
+    const RenderedRecipeListItem = renderer
+      .create(<RecipeList recipes={recipes} trending category="Trending" />)
+      .toJSON();
+    expect(RenderedRecipeListItem).toMatchSnapshot();
+  });
 });
-
-/*
-test('the flavor list contains lime', () => {
-  expect(['lime', 'mangle']).toContain('lime');
-});
-
-it('with component', () => {
-  const props = {
-      component: () => {},
-    },
-    ModalWrapperComponent = RecipeItem(<TouchableOpacity {...props} />);
-  expect(ModalWrapperComponent).toMatchSnapshot();
-});
-test('the flavor list contains lime', () => {
-  expect("lime juice").toContain('lime');
-}); */
